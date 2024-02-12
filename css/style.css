@@ -110,8 +110,8 @@ img {
 
 .big_thumb_single {
   display: none;
-  width: 25rem;
-  max-width: 100%;
+  width: 100%;
+  max-width: 25rem;
   padding-top: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -438,3 +438,41 @@ img {
 
 
 
+@media (max-width: 1199px) {
+  .small_thumb_holder label {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .header_promo {
+    display: none;
+  }
+  .small_thumb_holder label {
+    width: 3rem;
+    height: 3rem;
+  }
+  .section_profile_single {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .section_tab_control {
+    display: none;
+  }
+  .tab_single {
+    display: block;
+  }
+  .tab_single:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .section_category {
+    display: none;
+  }
+}
